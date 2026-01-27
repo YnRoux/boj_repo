@@ -1,14 +1,11 @@
-#include <iostream>
-
-using namespace std;
+# include <iostream>
 
 int main(int argc, char const *argv[]) {
-    
     double a, b;
-    cin >> a >> b;
     
-    cout.precision(12);
-    cout << fixed;
-    cout << a / b;
+    scanf("%lf %lf", &a, &b);
+    
+    printf("%.13lf", a / b);
+    
     return 0;
 }
