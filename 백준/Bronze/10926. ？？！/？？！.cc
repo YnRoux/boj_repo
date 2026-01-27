@@ -1,15 +1,10 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
+#include <stdio.h>
 
 int main(int argc, char const *argv[]) {
     
-    string id;
-    
-    cin >> id;
-
-    cout << id + "??!";
+    char id[51];
+    scanf("%s", id);
+    printf("%s?\?!", id);
     
     return 0;
 }
