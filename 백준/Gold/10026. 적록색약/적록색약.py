@@ -1,6 +1,4 @@
 import sys
-from collections import deque
-
 input = sys.stdin.readline
 n = int(input())
 grid = [list(input().rstrip()) for _ in range(n)]
@@ -9,11 +7,11 @@ dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
 def bfs(x, y, color, visited, current_grid):
-    queue = deque([(x, y)])
+    stack = [(x, y)]
     visited[x][y] = True
 
-    while queue:
-        cx, cy = queue.popleft()
+    while stack:
+        cx, cy = stack.pop()
 
         for i in range(4):
             nx, ny = cx + dx[i], cy + dy[i]
@@ -21,7 +19,7 @@ def bfs(x, y, color, visited, current_grid):
             if 0 <= nx < n and 0 <= ny < n:
                 if not visited[nx][ny] and current_grid[nx][ny] == color:
                     visited[nx][ny] = True
-                    queue.append((nx, ny))
+                    stack.append((nx, ny))
 
 def get_area_count(current_grid):
     visited = [[False] * n for _ in range(n)]
