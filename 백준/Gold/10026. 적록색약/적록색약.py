@@ -6,7 +6,7 @@ grid = [list(input().rstrip()) for _ in range(n)]
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
-def bfs(x, y, color, visited, current_grid):
+def dfs(x, y, color, visited, current_grid):
     stack = [(x, y)]
     visited[x][y] = True
 
@@ -28,7 +28,7 @@ def get_area_count(current_grid):
     for i in range(n):
         for j in range(n):
             if not visited[i][j]:
-                bfs(i, j, current_grid[i][j], visited, current_grid)
+                dfs(i, j, current_grid[i][j], visited, current_grid)
                 count += 1
     return count
 
