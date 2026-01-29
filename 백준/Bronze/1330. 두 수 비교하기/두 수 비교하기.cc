@@ -1,18 +1,9 @@
 #include <iostream>
 using namespace std;
-int main() {
+
+int main(int argc, char const *argv[]){
     int A, B;
-    
     cin >> A >> B;
-    
-    if (A > B) {
-        cout << ">";
-    }
-    else if (A < B) {
-        cout << "<";
-    }
-    else {
-        cout << "==";
-    }
+    cout << ((A > B) ? ">" : (A < B) ? "<" : "==");
     return 0;
 }
