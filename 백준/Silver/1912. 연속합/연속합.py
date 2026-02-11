@@ -2,13 +2,15 @@ def solve():
     n = int(input())
     l = list(map(int, input().split()))
 
-    dp = [0] * n
-    dp[0] = l[0]
+    current_sum = max_sum = l[0]
 
     for i in range(1, n):
-        dp[i] = max(l[i], dp[i-1] + l[i])
+        current_sum = max(l[i], current_sum + l[i])
 
-    print(max(dp))
+        if current_sum > max_sum:
+            max_sum = current_sum
+
+    print(max_sum)
 
 if __name__ == "__main__":
     solve()
