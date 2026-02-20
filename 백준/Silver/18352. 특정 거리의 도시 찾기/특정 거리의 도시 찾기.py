@@ -1,8 +1,7 @@
 import sys
-import heapq
+from collections import deque
 
 input = sys.stdin.readline
-INF = int(1e9)
 
 def solve():
     n, m, k, x = map(int, input().split())
@@ -10,24 +9,21 @@ def solve():
     graph = [[] for _ in range(n + 1)]
     for _ in range(m):
         u, v = map(int, input().split())
-        graph[u].append((v, 1))
-    distance = [INF] * (n + 1)
+        graph[u].append(v)
     
-    q = []
-    heapq.heappush(q, (0, x))
+    distance = [-1] * (n + 1)
     distance[x] = 0
     
-    while q:
-        dist, now = heapq.heappop(q)
+    queue = deque([x])
+    
+    while queue:
+        now = queue.popleft()
         
-        if distance[now] < dist:
-            continue
-        for i in graph[now]:
-            cost = dist + i[1]
-            if cost < distance[i[0]]:
-                distance[i[0]] = cost
-                heapq.heappush(q, (cost, i[0]))
-                
+        for next_node in graph[now]:
+            if distance[next_node] == -1:
+                distance[next_node] = distance[now] + 1
+                queue.append(next_node)
+    
     found = False
     for i in range(1, n + 1):
         if distance[i] == k:
