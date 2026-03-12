@@ -1,43 +1,25 @@
 import sys
+from collections import deque
 
 input = sys.stdin.readline
+d = deque()
 
-def solve():
-    n = int(input())
-    MAX_SIZE = 20001
-    deque = [0] * MAX_SIZE
-    head = 10000
-    tail = 10001
-
-    for _ in range(n):
-        command = input().split()
-        cmd = command[0]
-
-        if cmd == "push_front":
-            deque[head] = command[1]
-            head -= 1
-        elif cmd == "push_back":
-            deque[tail] = command[1]
-            tail += 1
-        elif cmd == "pop_front":
-            if head + 1 == tail:
-                print("-1")
-            else:
-                head += 1
-                print(deque[head])
-        elif cmd == "pop_back":
-            if tail - 1 == head:
-                print("-1")
-            else:
-                tail -= 1
-                print(deque[tail])
-        elif cmd == "size":
-            print(tail - head - 1)
-        elif cmd == "empty":
-            print(1 if head + 1 == tail else 0)
-        elif cmd == "front":
-            print(deque[head + 1] if head + 1 != tail else -1)
-        elif cmd == "back":
-            print(deque[tail - 1] if tail - 1 != head else -1)
-
-solve()
+for _ in range(int(input())):
+    cmd = input().split()
+    
+    if cmd[0] == "push_front":
+        d.appendleft(cmd[1])
+    elif cmd[0] == "push_back":
+        d.append(cmd[1])
+    elif cmd[0] == "pop_front":
+        print(d.popleft() if d else -1)
+    elif cmd[0] == "pop_back":
+        print(d.pop() if d else -1)
+    elif cmd[0] == "size":
+        print(len(d))
+    elif cmd[0] == "empty":
+        print(0 if d else 1)
+    elif cmd[0] == "front":
+        print(d[0] if d else -1)
+    elif cmd[0] == "back":
+        print(d[-1] if d else -1)
