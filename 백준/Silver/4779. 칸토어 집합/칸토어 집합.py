@@ -1,21 +1,15 @@
 import sys
-input = sys.stdin.readline
 
-def cut(k, n):
-    if n == 1:
-        return
-    
-    for i in range(k + n//3, k + (n//3) * 2):
-        res[i] = " "
-    
-    cut(k, n//3)
-    cut(k + (n//3) * 2, n//3)
+def Cantor(N):
+    if N == 0:
+        return '-'
+    else:
+        s = Cantor(N-1) + ' ' * len(Cantor(N-1)) + Cantor(N-1)
+    return s
 
-while 1:
+while True:
     try:
-        n = int(input())
-        res = ["-"] * 3 ** n
-        cut(0, 3 ** n)
-        print("".join(res))
+        N = int(sys.stdin.readline())
+        print(Cantor(N))
     except:
         break
