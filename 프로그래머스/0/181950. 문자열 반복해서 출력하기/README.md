@@ -1,10 +1,10 @@
 # [level 0] 문자열 반복해서 출력하기 - 181950 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181950) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181950?language=c) 
 
 ### 성능 요약
 
-메모리: 4.14 MB, 시간: 3.38 ms
+메모리: 4.52 MB, 시간: 1.80 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 01월 22일 15:53:21
+2026년 07월 29일 22:28:49
 
 ### 문제 설명
 
