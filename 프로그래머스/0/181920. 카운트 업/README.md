@@ -1,10 +1,10 @@
 # [level 0] 카운트 업 - 181920 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181920) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181920?language=cpp) 
 
 ### 성능 요약
 
-메모리: 11.3 MB, 시간: 0.00 ms
+메모리: 4.76 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 06월 29일 11:02:13
+2026년 07월 30일 14:52:18
 
 ### 문제 설명
 
