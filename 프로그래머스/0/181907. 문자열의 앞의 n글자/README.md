@@ -1,10 +1,10 @@
 # [level 0] 문자열의 앞의 n글자 - 181907 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181907) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181907?language=cpp) 
 
 ### 성능 요약
 
-메모리: 11.5 MB, 시간: 0.00 ms
+메모리: 4.82 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 06월 06일 15:07:01
+2026년 08월 01일 17:26:22
 
 ### 문제 설명
 
