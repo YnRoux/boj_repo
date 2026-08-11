@@ -1,10 +1,10 @@
 # [level 0] 배열에서 문자열 대소문자 변환하기 - 181875 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181875) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181875?language=cpp) 
 
 ### 성능 요약
 
-메모리: 11.6 MB, 시간: 0.01 ms
+메모리: 4.89 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 07월 03일 16:09:01
+2026년 08월 11일 12:47:12
 
 ### 문제 설명
 
