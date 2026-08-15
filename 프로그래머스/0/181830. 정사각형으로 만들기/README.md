@@ -1,10 +1,10 @@
 # [level 0] 정사각형으로 만들기 - 181830 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181830) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181830?language=cpp) 
 
 ### 성능 요약
 
-메모리: 11.6 MB, 시간: 0.06 ms
+메모리: 6.48 MB, 시간: 1.47 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 06월 14일 22:47:10
+2026년 08월 15일 12:26:58
 
 ### 문제 설명
 
