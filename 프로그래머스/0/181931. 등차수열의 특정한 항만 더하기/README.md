@@ -1,10 +1,10 @@
 # [level 0] 등차수열의 특정한 항만 더하기 - 181931 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181931?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181931?language=c) 
 
 ### 성능 요약
 
-메모리: 4.7 MB, 시간: 0.01 ms
+메모리: 5.26 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 07월 29일 19:00:10
+2026년 09월 03일 15:17:57
 
 ### 문제 설명
 
