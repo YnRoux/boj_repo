@@ -1,6 +1,6 @@
 # [level 0] 문자열 뒤집기 - 181905 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181905?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181905?language=c) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 08월 01일 17:39:13
+2026년 09월 08일 22:31:48
 
 ### 문제 설명
 
