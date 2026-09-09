@@ -1,10 +1,10 @@
 # [level 0] 문자 개수 세기 - 181902 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181902?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181902?language=c) 
 
 ### 성능 요약
 
-메모리: 4.7 MB, 시간: 0.01 ms
+메모리: 5.07 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 08월 02일 19:17:42
+2026년 09월 09일 11:35:33
 
 ### 문제 설명
 
